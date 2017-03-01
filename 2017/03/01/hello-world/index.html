@@ -63,13 +63,13 @@ Quick">
                         <ul id="main-nav">
                             
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/">Home</a>
+                                    <a class="main-nav-list-link" href="/">Főoldal</a>
                                 </li>
                             
                                         
                                     
                                 <li class="main-nav-list-item" >
-                                    <a class="main-nav-list-link" href="/about/index.html">About</a>
+                                    <a class="main-nav-list-link" href="/about/index.html">Elérhetőség</a>
                                 </li>
                             
                         </ul>
@@ -77,14 +77,14 @@ Quick">
                             <div id="search-form-wrap">
 
     <form class="search-form">
-        <input type="text" class="ins-search-input search-form-input" placeholder="Search" />
+        <input type="text" class="ins-search-input search-form-input" placeholder="Keresés" />
         <button type="submit" class="search-form-submit"></button>
     </form>
     <div class="ins-search">
     <div class="ins-search-mask"></div>
     <div class="ins-search-container">
         <div class="ins-input-wrapper">
-            <input type="text" class="ins-search-input" placeholder="Type something..." />
+            <input type="text" class="ins-search-input" placeholder="Keresendő szöveg..." />
             <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
         </div>
         <div class="ins-section-wrapper">
@@ -96,11 +96,11 @@ Quick">
 (function (window) {
     var INSIGHT_CONFIG = {
         TRANSLATION: {
-            POSTS: 'Posts',
-            PAGES: 'Pages',
-            CATEGORIES: 'Categories',
-            TAGS: 'Tags',
-            UNTITLED: '(Untitled)',
+            POSTS: 'Bejegyzések',
+            PAGES: 'Oldalak',
+            CATEGORIES: 'Kategóriák',
+            TAGS: 'Címkék',
+            UNTITLED: '(Névtelen)',
         },
         ROOT_URL: '/',
         CONTENT_URL: '/content.json',
@@ -125,7 +125,7 @@ Quick">
                         <div class="main-body-header">
     <h1 class="header">
     
-    uncategorized
+    kategorizálatlan
     </h1>
 </div>
                         <div class="main-body-content">
@@ -168,7 +168,7 @@ Quick">
 
 
 
-    <a data-url="http://yoursite.com/2017/03/01/hello-world/" data-id="cizr1x5su00003cvk1aluln1e" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://yoursite.com/2017/03/01/hello-world/" data-id="cizr209or0000csvk14hqolxt" class="article-share-link"><i class="fa fa-share"></i>Megosztás</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -235,9 +235,44 @@ Quick">
     <section id="comments">
     
         
-    <div id="disqus_thread">
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </div>
+    <div class="ds-thread" data-thread-key="2017/03/01/hello-world/" data-title="Hello World" data-url="http://yoursite.com/2017/03/01/hello-world/"></div>
+    <style>
+        #ds-thread #ds-reset .ds-textarea-wrapper {
+            background: none;
+        }
+        #ds-reset .ds-avatar img {
+            box-shadow: none;
+        }
+        #ds-reset .ds-gradient-bg {
+            background: #f7f7f7;
+        }
+        #ds-thread #ds-reset li.ds-tab a {
+            border-radius: 3px;
+        }
+        #ds-thread #ds-reset .ds-post-button {
+            color: white;
+            border: none;
+            box-shadow: none;
+            background: #d32;
+            text-shadow: none;
+            font-weight: normal;
+            font-family: 'Microsoft Yahei';
+        }
+        #ds-thread #ds-reset .ds-post-button:hover {
+            color: white;
+            background: #DE594C;
+        }
+        #ds-thread #ds-reset .ds-post-button:active {
+            background: #d32;
+        }
+        #ds-smilies-tooltip ul.ds-smilies-tabs li a.ds-current {
+            color: white;
+            background: #d32;
+            box-shadow: none;
+            text-shadow: none;
+            font-weight: normal;
+        }
+    </style>
 
     
     </section>
@@ -248,7 +283,7 @@ Quick">
                     <aside id="sidebar">
     <a class="sidebar-toggle" title="Expand Sidebar"><i class="toggle icon"></i></a>
     <div class="sidebar-top">
-        <p>follow:</p>
+        <p>követés:</p>
         <ul class="social-links">
             
                 
@@ -309,7 +344,7 @@ Quick">
             
                 
     <div class="widget-wrap">
-        <h3 class="widget-title">recents</h3>
+        <h3 class="widget-title">friss</h3>
         <div class="widget">
             <ul id="recent-post" class="">
                 
@@ -343,7 +378,7 @@ Quick">
             
                 
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">archives</h3>
+        <h3 class="widget-title">archívum</h3>
         <div class="widget">
             <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a><span class="archive-list-count">1</span></li></ul>
         </div>
@@ -359,7 +394,7 @@ Quick">
             
                 
     <div class="widget-wrap widget-list">
-        <h3 class="widget-title">links</h3>
+        <h3 class="widget-title">linkek</h3>
         <div class="widget">
             <ul>
                 
@@ -395,18 +430,15 @@ Quick">
 </footer>
         
     
-    <script>
-    var disqus_shortname = 'hexo-theme-hueman';
-    
-    
-    var disqus_url = 'http://yoursite.com/2017/03/01/hello-world/';
-    
+    <script type="text/javascript">
+    var duoshuoQuery = {short_name:'andyself'};
     (function() {
-    var dsq = document.createElement('script');
-    dsq.type = 'text/javascript';
-    dsq.async = true;
-    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    var ds = document.createElement('script');
+    ds.type = 'text/javascript';ds.async = true;
+    ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+    ds.charset = 'UTF-8';
+    (document.getElementsByTagName('head')[0]
+    || document.getElementsByTagName('body')[0]).appendChild(ds);
     })();
     </script>
 
