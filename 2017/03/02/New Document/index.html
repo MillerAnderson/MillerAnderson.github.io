@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Andy's Blog">
 <meta property="og:description" content="在本地安装Hexo12345678910安装Node.js在E盘新建一个文件夹Hexo按如下步骤通过npm安装Hexocd d:/hexohexo init blog (该操作会在Hexo目录下创建一个blog文件夹)cd blognpm installhexo ghexo s 访问 http://localhost:4000更改主题123456下载hueman主题解压放到blog/themes目">
 <meta property="og:image" content="http://yoursite.com/image/example.jpg">
-<meta property="og:updated_time" content="2017-03-02T14:44:58.120Z">
+<meta property="og:updated_time" content="2017-03-02T14:45:59.298Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客搭建全记录">
 <meta name="twitter:description" content="在本地安装Hexo12345678910安装Node.js在E盘新建一个文件夹Hexo按如下步骤通过npm安装Hexocd d:/hexohexo init blog (该操作会在Hexo目录下创建一个blog文件夹)cd blognpm installhexo ghexo s 访问 http://localhost:4000更改主题123456下载hueman主题解压放到blog/themes目">
@@ -170,9 +170,9 @@
 <p><font color="#0099ff" size="3" face="微软雅黑"><strong>使hexo d(发布)可用</strong></font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">安装 $ npm install hexo-deployer-git --save</div></pre></td></tr></table></figure></p>
 <p><font color="#0099ff" size="3" face="微软雅黑"><strong>设置CNAME</strong></font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">在blog/public目录下添加一个文件&quot;CNAME&quot;,里面的内容是&quot;andyself.com&quot;</div></pre></td></tr></table></figure></p>
 <p><font color="#0099ff" size="3" face="微软雅黑"><strong>设置DNS</strong></font><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">在域名的DNS中添加三条记录(前两条是指向github)</div><div class="line">@        A        192.30.252.153</div><div class="line">@        A        192.30.252.154</div><div class="line">www      CNAME    milleranderson.github.io.</div></pre></td></tr></table></figure></p>
-<blockquote>
-<p>hexo d<br>12.网站添加评论与计数<br>    1&gt;登录”多说”,在后台管理,将andyself.duoshuo.com中的andyself<br>    2&gt;设备theme下面的_config.yml<br>        duoshuo: # enter duoshuo shortname here =&gt;duoshuo: andyself<br>        并将默认的disqus注释或者删除<br>    3&gt;添加计数(使用不蒜子:<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="external">http://ibruce.info/2015/04/04/busuanzi/</a>)<br>        01.在theme/layout/common目录下的head.ejs的<head>标签里添加一行<br>            <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><br>        02.可在需要的地方添加本站pv/uv及本面pv<br>            <span id="busuanzi_container_site_pv"><br>                本站总访问量<span id="busuanzi_value_site_pv"></span>次<br>            </span><br>            <span id="busuanzi_container_site_uv"><br>              本站访客数<span id="busuanzi_value_site_uv"></span>人次<br>            </span><br>            <span id="busuanzi_container_page_pv"><br>              本文总阅读量<span id="busuanzi_value_page_pv"></span>次<br>            </span><br>            注: 在common目录下还可以看到其它ejs文件,其实这些是用于生成html文件的模板,<br>            将上面的点击量显示放在你希望显示的模板的某一区域即可<br>            另: 有些模板不是在common目录下,自己搜索一下文件名比如head.ejs即可找到该文件夹<br>13.为文章添加图片<br>    1&gt;在source文件夹下新建image文件夹,并放入图片<br>    2&gt;在文件中通过 <img src="/image/example.jpg" alt=""> 来调用<br>14.创建”About”页面: hexo new page about<br>15.创建文章: hexo new xxxxx</head></p>
-</blockquote>
+<pre><code>5&gt;hexo d
+6&gt;jfkdsla
+</code></pre><p>12.网站添加评论与计数<br>    1&gt;登录”多说”,在后台管理,将andyself.duoshuo.com中的andyself<br>    2&gt;设备theme下面的_config.yml<br>        duoshuo: # enter duoshuo shortname here =&gt;duoshuo: andyself<br>        并将默认的disqus注释或者删除<br>    3&gt;添加计数(使用不蒜子:<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="external">http://ibruce.info/2015/04/04/busuanzi/</a>)<br>        01.在theme/layout/common目录下的head.ejs的<head>标签里添加一行<br>            <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><br>        02.可在需要的地方添加本站pv/uv及本面pv<br>            <span id="busuanzi_container_site_pv"><br>                本站总访问量<span id="busuanzi_value_site_pv"></span>次<br>            </span><br>            <span id="busuanzi_container_site_uv"><br>              本站访客数<span id="busuanzi_value_site_uv"></span>人次<br>            </span><br>            <span id="busuanzi_container_page_pv"><br>              本文总阅读量<span id="busuanzi_value_page_pv"></span>次<br>            </span><br>            注: 在common目录下还可以看到其它ejs文件,其实这些是用于生成html文件的模板,<br>            将上面的点击量显示放在你希望显示的模板的某一区域即可<br>            另: 有些模板不是在common目录下,自己搜索一下文件名比如head.ejs即可找到该文件夹<br>13.为文章添加图片<br>    1&gt;在source文件夹下新建image文件夹,并放入图片<br>    2&gt;在文件中通过 <img src="/image/example.jpg" alt=""> 来调用<br>14.创建”About”页面: hexo new page about<br>15.创建文章: hexo new xxxxx</head></p>
 
         </div>
         <footer class="article-footer">
@@ -180,7 +180,7 @@
 
 
 
-    <a data-url="http://yoursite.com/2017/03/02/New Document/" data-id="cizsi61pu00001ovkvrs7kldz" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yoursite.com/2017/03/02/New Document/" data-id="cizsi7dqx0001f0vkfao6g6lp" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
