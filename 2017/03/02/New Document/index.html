@@ -8,16 +8,18 @@
     
         <meta name="keywords" content="Hexo" />
     
-    <meta name="description" content="hellohellowqinfjk安装hexo1&amp;gt;fjksa2&amp;gt;fjkdsa3&amp;gt;fjksa4&amp;gt;fjdska">
+    <meta name="description" content="1.安装Node.js2.安装git3.在E盘新建一个文件夹Hexo4.cd d:/hexo5.hexo init blog (该操作会在Hexo目录下创建一个blog文件夹)6.cd blog7.npm install8.hexo g9.hexo s 本地登录localhost:4000即可访问网站10.更改主题:    1&amp;gt;下载hueman主题    2&amp;gt;解压放到blog/them">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo博客搭建全记录">
 <meta property="og:url" content="http://yoursite.com/2017/03/02/New Document/index.html">
 <meta property="og:site_name" content="Andy's Blog">
-<meta property="og:description" content="hellohellowqinfjk安装hexo1&amp;gt;fjksa2&amp;gt;fjkdsa3&amp;gt;fjksa4&amp;gt;fjdska">
-<meta property="og:updated_time" content="2017-03-02T12:33:22.443Z">
+<meta property="og:description" content="1.安装Node.js2.安装git3.在E盘新建一个文件夹Hexo4.cd d:/hexo5.hexo init blog (该操作会在Hexo目录下创建一个blog文件夹)6.cd blog7.npm install8.hexo g9.hexo s 本地登录localhost:4000即可访问网站10.更改主题:    1&amp;gt;下载hueman主题    2&amp;gt;解压放到blog/them">
+<meta property="og:image" content="http://yoursite.com/image/example.jpg">
+<meta property="og:updated_time" content="2017-03-02T13:21:17.855Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客搭建全记录">
-<meta name="twitter:description" content="hellohellowqinfjk安装hexo1&amp;gt;fjksa2&amp;gt;fjkdsa3&amp;gt;fjksa4&amp;gt;fjdska">
+<meta name="twitter:description" content="1.安装Node.js2.安装git3.在E盘新建一个文件夹Hexo4.cd d:/hexo5.hexo init blog (该操作会在Hexo目录下创建一个blog文件夹)6.cd blog7.npm install8.hexo g9.hexo s 本地登录localhost:4000即可访问网站10.更改主题:    1&amp;gt;下载hueman主题    2&amp;gt;解压放到blog/them">
+<meta name="twitter:image" content="http://yoursite.com/image/example.jpg">
     
 
     
@@ -162,14 +164,14 @@
         
         
         <div class="article-entry" itemprop="articleBody">
-            <h4 id="hello"><a href="#hello" class="headerlink" title="hello"></a>hello</h4><h3 id="hello-1"><a href="#hello-1" class="headerlink" title="hello"></a>hello</h3><h1 id="wqinfjk"><a href="#wqinfjk" class="headerlink" title="wqinfjk"></a>wqinfjk</h1><font size="3" face="微软雅黑"><br><br><font size="4" color="#0099ff"><strong>安装hexo</strong></font><br>1&gt;fjksa<br>2&gt;fjkdsa<br>3&gt;fjksa<br>4&gt;fjdska<br><br><br><br><br><br><br></font>
+            <font size="3" face="微软雅黑"><br><br>1.安装Node.js<br>2.安装git<br>3.在E盘新建一个文件夹Hexo<br>4.cd d:/hexo<br>5.hexo init blog (该操作会在Hexo目录下创建一个blog文件夹)<br>6.cd blog<br>7.npm install<br>8.hexo g<br>9.hexo s 本地登录localhost:4000即可访问网站<br>10.更改主题:<br>    1&gt;下载hueman主题<br>    2&gt;解压放到blog/themes目录下面<br>    3&gt;删除.github文件夹及.gitignore文件<br>    4&gt;修改blog目录下的_config.yml: theme: hueman 注意冒号后面有个空格<br>    5&gt;hexo g<br>    6&gt;hexo s<br>11.发布到github<br>    0&gt;在github新建一个分支milleranderson.github.io(注意:milleranderson是账户名)<br>    1&gt;修改blog目录下的_config.yml<br>    deploy:<br>      type: git<br>      repo: <a href="https://github.com/MillerAnderson/MillerAnderson.github.io.git" target="_blank" rel="external">https://github.com/MillerAnderson/MillerAnderson.github.io.git</a><br>      branch: master<br>    2&gt;设置git(在Git Bash命令行模式下)<br>        01.$ git config –global user.name “milleranderson”<br>        02.$ git config –global user.email “67151970@qq.com”<br>        03.$ ssh-keygen -t rsa -C “67151970@qq.com” (我自己连续三个回车,没有设置密码)<br>        04.$ eval “$(ssh-agent -s)” 查看得到结果Agent pid 2636<br>        05.$ ssh-add ~/.ssh/id_rsa 添加ssh key到 ssh-agent<br>        06.登录github添加ssh key: 将刚才生成的密钥对中的id_rsa.pub公钥中的全部内容添加进去<br>        07.$ ssh -T git@github.com 测试<br>    3&gt;安装 $ npm install hexo-deployer-git –save<br>    4&gt;在blog/public目录下添加一个文件”CNAME”,里面的内容是”andyself.com”<br>    5&gt;在域名的DNS中添加三条记录(前两条是指向github)<br>        @        A        192.30.252.153<br>        @        A        192.30.252.154<br>        www      CNAME    milleranderson.github.io.<br>    5&gt;hexo d<br>12.网站添加评论与计数<br>    1&gt;登录”多说”,在后台管理,将andyself.duoshuo.com中的andyself<br>    2&gt;设备theme下面的_config.yml<br>        duoshuo: # enter duoshuo shortname here =&gt;duoshuo: andyself<br>        并将默认的disqus注释或者删除<br>    3&gt;添加计数(使用不蒜子:<a href="http://ibruce.info/2015/04/04/busuanzi/" target="_blank" rel="external">http://ibruce.info/2015/04/04/busuanzi/</a>)<br>        01.在theme/layout/common目录下的head.ejs的<head>标签里添加一行<br>            <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script><br>        02.可在需要的地方添加本站pv/uv及本面pv<br>            <span id="busuanzi_container_site_pv"><br>                本站总访问量<span id="busuanzi_value_site_pv"></span>次<br>            </span><br>            <span id="busuanzi_container_site_uv"><br>              本站访客数<span id="busuanzi_value_site_uv"></span>人次<br>            </span><br>            <span id="busuanzi_container_page_pv"><br>              本文总阅读量<span id="busuanzi_value_page_pv"></span>次<br>            </span><br>            注: 在common目录下还可以看到其它ejs文件,其实这些是用于生成html文件的模板,<br>            将上面的点击量显示放在你希望显示的模板的某一区域即可<br>            另: 有些模板不是在common目录下,自己搜索一下文件名比如head.ejs即可找到该文件夹<br>13.为文章添加图片<br>    1&gt;在source文件夹下新建image文件夹,并放入图片<br>    2&gt;在文件中通过 <img src="/image/example.jpg" alt=""> 来调用<br>14.创建”About”页面: hexo new page about<br>15.创建文章: hexo new xxxxx<br><br><br><br><br><br><br><br><br><br><br><br></head></font>
         </div>
         <footer class="article-footer">
             
 
 
 
-    <a data-url="http://yoursite.com/2017/03/02/New Document/" data-id="cizsds20d0002jsvk7vir95lv" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
+    <a data-url="http://yoursite.com/2017/03/02/New Document/" data-id="cizsesvk00001bgvkv57mw706" class="article-share-link"><i class="fa fa-share"></i>分享到</a>
 <script>
     (function ($) {
         $('body').on('click', function() {
@@ -342,7 +344,7 @@
                             <a href="/2017/03/02/New Document/" class="thumbnail">
     
     
-        <span class="thumbnail-image thumbnail-none"></span>
+        <span style="background-image:url(/image/example.jpg)" alt="Hexo博客搭建全记录" class="thumbnail-image"></span>
     
     
 </a>
