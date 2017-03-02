@@ -1123,53 +1123,53 @@ a.article-title:hover {
 .article-entry h6 {
   font-weight: 600;
 }
-color: #0099ff h1,
-color: #0099ff h2,
-color: #0099ff h3,
-color: #0099ff h4,
-color: #0099ff h5,
-color: #0099ff h6 {
+.article-entry h1,
+.article-entry h2,
+.article-entry h3,
+.article-entry h4,
+.article-entry h5,
+.article-entry h6 {
   line-height: 1.3em;
   margin: 1.3em 0;
 }
-color: #0099ff a {
-  color: #006bde;
+.article-entry a {
+  color: #09f;
   text-decoration: none;
 }
-color: #0099ff a:hover {
+.article-entry a:hover {
   text-decoration: underline;
 }
-color: #0099ff ul,
-color: #0099ff ol,
-color: #0099ff dl {
+.article-entry ul,
+.article-entry ol,
+.article-entry dl {
   margin-top: 1.6em;
   margin-bottom: 1.6em;
 }
-color: #0099ff img,
-color: #0099ff video {
+.article-entry img,
+.article-entry video {
   max-width: 100%;
   height: auto;
   display: block;
   margin: auto;
 }
-color: #0099ff iframe {
+.article-entry iframe {
   border: none;
 }
-color: #0099ff table {
+.article-entry table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
 }
-color: #0099ff th {
+.article-entry th {
   font-weight: 600;
   border-bottom: 3px solid #ddd;
   padding-bottom: 0.5em;
 }
-color: #0099ff td {
+.article-entry td {
   border-bottom: 1px solid #ddd;
   padding: 10px 0;
 }
-color: #0099ff blockquote {
+.article-entry blockquote {
   color: #777;
   quote: none;
   margin: 0 0 20px 0;
@@ -1177,7 +1177,7 @@ color: #0099ff blockquote {
   font-style: italic;
   padding-left: 50px;
 }
-color: #0099ff blockquote:before {
+.article-entry blockquote:before {
   top: 0;
   left: 0;
   color: #ccc;
@@ -1188,29 +1188,29 @@ color: #0099ff blockquote:before {
   font-style: normal;
   font-family: 'FontAwesome';
 }
-color: #0099ff blockquote footer {
+.article-entry blockquote footer {
   font-size: 14px;
   margin: 1.6em 0;
   font-family: "Titillium Web", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
 }
-color: #0099ff blockquote footer cite:before {
+.article-entry blockquote footer cite:before {
   content: "—";
   padding: 0 0.5em;
 }
-color: #0099ff .pullquote {
+.article-entry .pullquote {
   text-align: left;
   width: 45%;
   margin: 0;
 }
-color: #0099ff .pullquote.left {
+.article-entry .pullquote.left {
   margin-left: 0.5em;
   margin-right: 1em;
 }
-color: #0099ff .pullquote.right {
+.article-entry .pullquote.right {
   margin-right: 0.5em;
   margin-left: 1em;
 }
-color: #0099ff .caption {
+.article-entry .caption {
   color: #aaa;
   display: block;
   font-size: 0.9em;
@@ -1218,15 +1218,15 @@ color: #0099ff .caption {
   position: relative;
   text-align: center;
 }
-color: #0099ff .video-container {
+.article-entry .video-container {
   position: relative;
   padding-top: 56.25%;
   height: 0;
   overflow: hidden;
 }
-color: #0099ff .video-container iframe,
-color: #0099ff .video-container object,
-color: #0099ff .video-container embed {
+.article-entry .video-container iframe,
+.article-entry .video-container object,
+.article-entry .video-container embed {
   position: absolute;
   top: 0;
   left: 0;
